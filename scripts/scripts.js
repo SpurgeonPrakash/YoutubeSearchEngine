@@ -42,6 +42,7 @@ $(function () {
 });
 
 const crossSearch = () => {
+  $("#search-form").hide();
   $("#results").html("");
   $("#buttons").html("");
 
