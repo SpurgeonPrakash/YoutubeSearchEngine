@@ -39,6 +39,12 @@ $(function () {
   $("#search-form").submit(function (event) {
     event.preventDefault();
   });
+
+  $("#youtube").click(() => {
+    $("#search-form").show();
+    $("#results").html("");
+    $("#buttons").html("");
+  });
 });
 
 const crossSearch = () => {

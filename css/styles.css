@@ -102,6 +102,10 @@ footer {
   margin-left: 382px;
 }
 
+#youtube {
+  cursor: pointer;
+}
+
 #crosstube-search-btn {
   margin-left: 524px;
   margin-top: 5px;
