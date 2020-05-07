@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>A Youtube Search Engine</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="css/fancybox/jquery.fancybox.css"
+      media="screen"
+    />
+
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+      charset="utf-8"
+    ></script>
+    <!-- <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" charset="utf-8"></script> -->
+    <script src="scripts/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="scripts/scripts.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function () {
+        $(".fancybox").fancybox();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Search<span>Youtube</span></h1>
+        <p>Search all Youtube Videos</p>
+        <div class="crosstube">
+          <p class="crossText">
+            Click on CrossTubes to get Wonderful word of God
+          </p>
+
+          <div class="fieldcontainer">
+            <button
+              type="submit"
+              name="crosstube-search-btn"
+              id="crosstube-search-btn"
+              value=""
+              onclick="crossSearch();"
+            >
+              <h1><span>Cross</span>Tube</h1>
+            </button>
+          </div>
+        </div>
+      </header>
+      <section>
+        <form class="" id="search-form" name="search-form" onsubmit="search()">
+          <div class="fieldcontainer">
+            <input
+              type="search"
+              id="query"
+              class="search-field"
+              placeholder="Search Youtube"
+              name=""
+              value=""
+            />
+            <input type="submit" name="search-btn" id="search-btn" value="" />
+          </div>
+        </form>
+        <ul id="results"></ul>
+        <div id="buttons"></div>
+      </section>
+      <footer>
+        <p>Copyright &copy 2020, All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>
